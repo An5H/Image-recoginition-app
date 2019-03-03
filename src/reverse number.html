@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<title>Palindrome.html</title>
+<script type ="text/javascript">
+function revOfNumber()
+{
+	let num = prompt("Enter the number to be reveresed :", " ");
+	let number= num;
+	let reverse = 0, remainder;
+	while (number>0)
+	{
+	remainder = number % 10;
+	reverse = (reverse * 10 )+ remainder ;
+	number = Math.floor(number/10);
+	}
+	document.write("The given number is : " +num+ " <br/> The reversed number is : " +reverse+ "\n");
+}
+</script>
+<body onload="revOfNumber()"> 
+</body>
+</html>
